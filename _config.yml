@@ -1,7 +1,7 @@
 site: Nik ILyushkin – 🥝 PM
 
 url: https://nik.iocats.com
-baseurl: 
+baseurl: /
 
 collections:
   pages:
@@ -54,4 +54,3 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-  
