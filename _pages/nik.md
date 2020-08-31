@@ -1,5 +1,5 @@
 ---
-title: Nik ILyushkin - About me
+title: About me
 subtitle: I'm an Auckland based Product Manager and Agility Consultant.
 description: I'm an Auckland based Product Manager and Agility Consultant.
 featured_image: /images/nik/nik-portrait.jpg
