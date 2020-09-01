@@ -1,7 +1,7 @@
 ---
 title: About me
-subtitle: I'm an Auckland based Product Manager and Agility Consultant.
-description: I'm an Auckland based Product Manager and Agility Consultant.
+subtitle: Husband | Father | 🥝 Product Manager and Enterprise Agilist.
+description: Husband | Father | 🥝 Product Manager and Enterprise Agilist.
 featured_image: /images/nik/nik-portrait.jpg
 ---
 
