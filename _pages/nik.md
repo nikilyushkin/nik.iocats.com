@@ -13,7 +13,7 @@ Hey, I'm Nik Ilyushkin. I’m a Product Manager at [Roam Creative](https://weare
 
 I’m an active mentor startups and individuals interested in Agility and Product thinking.
 
-My areas of expertise: fintech / b2c products / strategy / team culture / organisational agility.
+My areas of expertise: fintech / b2c products / strategy / team culture / enterprise agility.
 
 This blog is my pet project built with [Jekyll](https://jekyllrb.com/), helping me to write more in public and categorise best resources on product management and agile software development.
 
