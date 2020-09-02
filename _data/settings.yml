@@ -1,7 +1,7 @@
 basic_settings:
   site_title: Nik ILyushkin
   site_tagline: 🥝 PM. Daily f-ups, some triumphs, my journey at the edge of the World.
-  favicon_image: /images/favicon.ico
+  favicon_image: /images/favicon.png
 
 header_settings:
   logo_image: 
