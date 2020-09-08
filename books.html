@@ -1,0 +1,92 @@
+---
+layout: default
+title: My PM Bookshelf
+subtitle: Books and Blogs on Product Management and Leadership.
+description: Here is my living bookshelf and collection of blogs, which inspire and help me on my journey.
+featured_image: /images/books/books-landscape.jpg
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.subtitle }}</p>
+
+	</div>
+
+</section>
+
+<section class="blog single">
+
+	<div class="wrap">
+	<h3>The Bookshelf</h3>
+	<p>I'm reading quite a few books; here is the organized list of them.</p>
+
+	<p>I've tried to organized them in a way to create a path: closer to the center are essentials, and the further they are – the better they become when you have your very own experience.</p>
+	
+	<ul class=make_list>
+		<li>Essentials are good for junior PMs, who are building features; </li>
+		<li>The ones in between are for mid-level PMs, who are building products;</li> 
+		<li>At last, the furthest are for seniors, whos building organizations and systems. </li>
+	</ul>
+	
+	<p style="text-align:center"><iframe width="640" height="640" src="https://miro.com/app/embed/o9J_kmaP2Fg=/?autoplay=yep " frameborder="0" scrolling="yes" allowfullscreen></iframe></p>
+
+	<h3>Blogs to read</h3>
+	<p><strong>Media and Aggregation</strong>:</p>
+			<ul>
+			<li><a href="https://news.ycombinator.com" target="_blank">Hacker News</a></li>
+			<li><a href="https://infomate.club/backlog_and_money/" target="_blank">Infomate</a> by vas3k.ru</li>
+			</ul>
+	<p><strong>Blogs</strong>:</p>
+			<ul>
+				<li><a href="https://svpg.com/" target="_blank">SVPG</a></li>
+				<li><a href="https://blog.ycombinator.com" target="_blank">YCombinator’s Blog</a></li>
+				<li><a href="http://a16z.com" target="_blank">a16z</a></li>
+				<li><a href="https://andrewchen.co" target="_blank">Andrew Chen</a></li>
+				<li><a href="https://firstround.com/review/" target="_blank">First Round Review</a> 🥰 </li>
+				<li><a href="https://www.intercom.com/blog/" target="_blank">Inside Intercom</a></li>
+				<li><a href="https://randsinrepose.com" target="_blank">Rands in Response</a></li>
+				<li><a href="https://www.ben-evans.com/benedictevans/" target="_blank">Benedict Evans</a></li>
+				<li><a href="https://www.collaborativefund.com/blog/" target="_blank">Collaborative Fund</a></li>
+				<li><a href="https://gopractice.ru/" target="_blank">GoPractice!</a> in 🇷🇺</li>
+				<li><a href="https://blog.leanstack.com/" target="_blank">Love the Problem</a></li>
+				<li><a href="https://medium.com/facebook-design" target="_blank">Facebook Design</a></li>
+				<li><a href="https://www.uxmatters.com/" target="_blank">UXMatters</a></li>
+			</ul>
+	<p><strong>YouTube channels</strong>:</p>
+			<ul>
+				<li><a href="https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg" target="_blank">YCombinator</a></li>
+				<li><a href="https://www.youtube.com/channel/UC9cn0TuPq4dnbTY-CBsm8XA" target="_blank">a16z</a></li>
+				<li><a href="https://www.youtube.com/c/ScrumOrg" target="_blank">Scrum.org</a></li>
+				<li><a href="https://www.youtube.com/channel/UCbmNph6atAoGfqLoCL_duAg" target="_blank">Talks at Google</a></li>
+				<li><a href="https://www.youtube.com/user/StartupGrind/featured" target="_blank">Startup Grind</a></li>
+				<li><a href="https://www.youtube.com/c/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8" target="_blank">Yandex Academy of Product Management</a> in 🇷🇺</li>
+			</ul>
+
+	<p>Folks to follow on <a href="https://twitter.com/i/lists/1298880119927316480" target="_blank">Twitter</a></p>
+
+        {% for post in site.categories.books %}
+		<article class="blog-post">
+
+			<div class="blog-post__header">
+				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+			</div>
+
+			{% if post.featured_image %}
+			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
+			{% endif %}
+
+			<div class="blog-post__content">
+				<p>{{ post.excerpt }}</p>
+				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
+			</div>
+
+		</article>
+
+        {% endfor %}
+	</div>
+
+</section>
