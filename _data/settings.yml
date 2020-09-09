@@ -16,8 +16,8 @@ menu_settings:
     #  url: '/projects/'
     - title: 'PM Bookshelf'
       url: '/books'  
-    - title: 'About me'
-      url: '/nik'
+   # - title: 'About me'
+   #   url: '/nik'
     - title: 'Contact'
       url: '/contact'
 
